@@ -1,0 +1,641 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+}
+header {
+    display: flex;
+    height: 80px;
+    background-color: #e9eae3;;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+}
+.container{
+display: flex;
+justify-content: space-between;
+width: 1070px;
+}
+.logo{
+display: flex;
+align-items: center;
+margin-left: 20px;
+padding-right: 30px;
+}
+.menu {
+    display:inline-flex;
+    align-items:center;
+    margin-left: 40px;
+}
+
+
+
+
+nav ul,
+nav li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+nav ul {
+    display: flex;
+}
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+nav .active a,
+nav a:hover {
+    color: #6c7ae0;
+}
+.imagens {
+    display: flex;
+    align-items: center;
+}
+.imagens img {
+    width: 20px;
+    padding: 15px;
+    display: block;
+}
+
+header.rolagem {
+    background-color: #fff;
+    box-shadow: 0 0 2px rgb(160, 160, 160);
+}
+
+.banner{
+    background-image: url(../img/slide-02.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+.dropdown-menu a {
+    display: block;
+    color: black;
+}
+
+.dropdown-menu {
+    position: absolute;
+    box-shadow: 0 0 2px rgb(160, 160, 160);
+    background-color: #FFF;
+    display: none;
+    padding-right: 30px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.textos {
+
+    padding: 100px;
+}
+.textos h2{
+    font-size: 28px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+.textos h1{
+    font-family: 'Playfair Display SC', serif;
+    font-size: 60px;
+    color: #333;
+    padding: 19px 0px 43px;
+    margin: 0;
+}
+.button2{
+    display:inline-block;
+    background-color:#6c7ae0;
+    color:#FFF;
+    text-transform: uppercase;
+    font-size:12px;
+    font-weight:600;
+    padding:10px 30px;
+    border-radius:20px;
+    border: #6c7ae0;
+}
+.banner_options {
+    height: 180px;
+    display: flex;
+}
+.banner h2 {
+    padding-top: 120px;
+}
+.banner1,
+.banner2,
+.banner3{
+    flex: 1;
+    width: 400px;
+    height: 230px;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+}
+.banner1 {
+    border: 1px solid #e6e6e6;
+    margin-right:20px ;
+    background-image: url(../img/banner-01.jpg);
+    background-size: cover;
+}
+.banner2 {
+    border: 1px solid #e6e6e6;
+    background-image: url(../img/banner-02.jpg);
+    background-size: cover;
+}
+
+.banner3 {
+    border: 1px solid #e6e6e6;
+    background-image: url(../img/banner-03.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left:20px ;
+}
+.button3{
+    display:inline-flex;
+    background-color:#6c7ae0;
+    color:#FFF;
+    text-transform: uppercase;
+    font-size:10px;
+    font-weight:600;
+    padding:13px ;
+    border-radius:20px;
+    border: #6c7ae0;
+}
+.banner_options {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.banner1:hover,
+.banner2:hover,
+.banner3:hover {
+    color: #FFF;
+    box-shadow: inset 0 0 0 10000px rgba(108, 122, 224, 0.8);
+}
+.banner1 .button3,
+.banner2 .button3,
+.banner3 .button3 {
+    display: none; /* O botão estará oculto inicialmente */
+    background: none; /* Remove o fundo padrão do botão */
+    border: none; /* Remove a borda padrão do botão */
+    cursor: pointer;
+
+}
+
+/* Remove a borda de baixo do texto quando o mouse passar sobre o botão */
+.banner1 .button3:hover,
+.banner2 .button3:hover,
+.banner3 .button3:hover {
+    text-decoration: none;
+}
+
+/* Quando o mouse passar sobre o banner1, o botão será exibido */
+.banner1:hover .button3,
+.banner2:hover .button3,
+.banner3:hover .button3 {
+    display: block;
+    color: #FFF; /* Cor do texto */
+    font-size: 14px;
+    border-bottom: 2px solid #e6e6e6;
+}
+
+.produtos h1{
+    font-size: 36px;
+    color: #222222;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+.fillters {
+    padding-left: 46px;
+}
+
+.fillters ul,
+.fillters li {
+    list-style: none;
+}
+
+.fillters li {
+    color: #888;
+    display: inline-block;
+    padding: 10px;
+    font-size: 15px;
+    border-bottom: 1px solid #FFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona transições de cor */
+}
+
+.fillters li:hover,
+.fillters li.active {
+    border-bottom: 1px solid #333;
+    background-color: #f0f0f0; /* Muda a cor de fundo ao passar o mouse */
+    color: #333;
+    display: inline-block;
+    margin-left: 10px; /* Adicione um espaço entre as opções */
+}
+
+.section-fillters--photos {
+    width: 100vw;
+    max-width: 1125px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px; /* Ajustei o padding para garantir mais espaço entre o conteúdo e as bordas */
+    margin-left: -100px; /* Removi, pois pode impactar a posição do conteúdo na tela */
+}
+
+.section-fillters--photo {
+    width: 220px; /* Ajustei o tamanho para garantir 4 fotos por linha */
+    margin: 20px; /* Adicionei margem para criar espaçamento entre as fotos */
+}
+
+.section-fillters--photoarea {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    padding-bottom: 70px;
+    box-sizing: border-box; /* Adicionei para garantir que as bordas e o preenchimento não afetem as dimensões totais */
+    transition: transform 0.3s; /* Adicionei uma transição para suavizar o efeito no hover */
+}
+
+
+
+
+
+
+
+.section-fillters--photoarea img {
+    width: 130%; /* Ajustei para garantir que a imagem se ajuste à área */
+    height: auto; /* Para manter a proporção da imagem */
+    margin-left: 20px;
+}
+
+.section-fillters--photoarea h5 {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #999;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+.section-fillters--photoarea h6,
+.section-fillters--photoarea h5 {
+    margin-left: 90px;
+}
+.section-fillters--photoarea h6 {
+    font-size: 14px;
+    color: #666;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    margin-top: -10px; /* Ajustei a margem para melhorar o espaçamento entre h5 e h6 */
+}
+
+/* *Modal */
+.modal {
+    display: none; /* Oculta o modal por padrão */
+    position: fixed; /* Posição fixa para cobrir a tela inteira */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    background-color: rgba(0,0,0,0.7); /* Fundo escuro semi-transparente */
+    z-index: 1; /* Coloca o modal acima de outros elementos */
+    padding-top: 60px;
+    padding-bottom: 30px;
+    padding-left: 135px;
+    overflow: auto;
+}
+.imgs{
+    width: 100px;
+    padding-bottom: 20px;
+}
+.modal-content {
+    width: 80%;
+    max-height: 90%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 60px 15px 30px 15px;
+    display: flex;
+    flex-direction: row;
+}
+#openModalButton{
+    display:inline-block;
+    background-color:#6c7ae0;
+    color:#FFF;
+    text-transform: uppercase;
+    font-size:12px;
+    font-weight:600;
+    padding:10px 30px;
+    border-radius:20px;
+    border: #6c7ae0;
+}
+/* Estilo para a primeira parte */
+.modal-left {
+    width: 80px;
+    height: 390px;
+    background-color: #ffffff; /* Cor de fundo para a primeira parte */
+    float: left;
+    padding: 45px 18px 30px 41px;
+}
+.imgs img {
+    max-width: 60%;
+    height: auto;
+    padding-bottom: 7px;
+}
+.modal-middle img{
+    max-width: 90%;
+    height: auto;
+}
+/* Estilo para a segunda parte */
+/* Estilo para a segunda parte */
+.modal-middle {
+    width: calc(100% - 894px);
+    height: 390px;
+    background-color: #ffffff;
+    float: left;
+    padding: 45px 15px 30px 15px;
+}
+
+
+/* Estilo para a terceira parte */
+.modal-right {
+    padding: 45px 15px 30px 15px;
+    width: 430px;
+    height: 48.8%;
+    background-color: #ffffff;
+    float: left;
+}
+
+.modal-right h2 {
+font-size: 24px;
+color: #333;
+font-weight: 400;
+}
+.modal-right h6 {
+    font-size: 18px;
+    color: #333;
+    }
+    .modal-right h4 {
+        font-size: 14px;
+        color: #666;
+        font-weight: 400;
+        }
+        label{
+            padding: 10px;
+        }
+/* Estilo para o botão de fechar */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-wrapper {
+    display: flex;
+    background: var(--footer-background);
+    flex-direction: column;
+    max-width: 1020px; 
+    width: 100%;
+    padding: 16px;
+}
+
+
+/*? top section */
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    padding: 16px 0px;
+    justify-content: space-between;
+}
+.info a {
+    text-decoration: none;
+    color: #666;
+}
+
+/*? footer subscribe */
+.footer-subscribe {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.footer-subscribe > input {
+    border: 1px solid #FFF;
+    color: #FFF;
+    outline: none;
+    min-height: 36px;
+    background-color: var(--footer-background);
+    font-size: 1.2rem;
+    flex: 1 0 120px;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.footer-subscribe > input::placeholder {
+    color: #B2B2B2;
+}
+
+.footer-subscribe > button {
+    cursor: pointer;
+    background-color: var(--button-color);
+    border-radius: 8px;
+    color: white;
+    font-size: 1.25rem;
+    min-width: 120px;
+    min-height: 36px;
+    flex: 1 0 80px;
+    white-space: nowrap;
+    padding: 8px 12px;
+    border: 0px;
+    outline: none;
+    border: 1px solid var(--button-border);
+}
+
+
+/*? footer columns */
+.footer-columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    flex: 2 0 140px;
+    width: 100%;
+    gap: 16px;
+    padding: 24px 8px 16px 8px;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.footer-columns ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-columns ul a {
+    color: #B2B2B2;
+    text-decoration: none;
+}
+
+.footer-columns ul a:hover{
+    text-decoration: none;
+    color: #6c7ae0;
+}
+
+.footer-columns ul li {
+    margin-bottom: 16px;
+}
+
+.footer-columns h3 {
+    color: #FFF;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.125rem;
+}
+
+.footer-centering {
+    margin: 0 auto;
+}
+
+.footer-columns > section {
+    min-width: 150px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    gap: 16px;
+    color: #FFF;
+    margin-bottom: 60px;
+}
+
+.footer-logo svg {
+    stroke: var(--text-color);
+    stroke-width: 8px;
+    width: 50px;
+    height: 50px;
+}
+
+
+/*? Footer bottom */
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+    padding: 16px 0px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #B2B2B2;
+}
+
+.footer-bottom > small {
+    font-size: 16px;
+    margin: 0 4px;
+}
+
+.footer-headline > h2 {
+    margin: 0px;
+    color: #FFF;
+}
+
+.footer-headline > p {
+    color: #B2B2B2;
+    margin: 4px 0px 20px 0px;
+}
+
+.footer-line {
+    display: block;
+    min-width: 40px;
+    height: 2px;
+    background-color: var(--text-gray);
+}
+
+/*? socials */
+
+.social-links {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.social-text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    transition: all 0.2s ease-in-out;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+.social-links ul {
+    display: flex;
+    gap: 12px;
+    list-style-type: none;
+}
+
+/*? mobile */
+
+@media (max-width: 800px) {
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 16px 8px 32px 8px;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: space-between;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
